@@ -1,8 +1,14 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/crypto-website/',  // 👈 This fixes GitHub Pages blank screen
-})
+  base: '/crypto-website/', // 👈 IMPORTANT: Replace with your repo name
+  server: {
+    port: 3000,
+  },
+  build: {
+    outDir: 'dist',
+  },
+});
