@@ -355,7 +355,7 @@ export default function App() {
             Profile
           </button>
         </div>
-        <h1 style={styles.title}>BullCoin Fantasy Crypto</h1>
+        <h1 style={styles.title}>BitbullCoin Fantasy Crypto</h1>
         <div>
           <button
             style={{ ...styles.btnTop, background: topBtnColors.wallet }}
